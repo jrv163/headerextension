@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://bptcomco.sharepoint.com/sites/Prueba/SitePages/CollabHome.aspx",
+      "customActions": {
+        "fb489567-eab4-4b92-a42b-71aabd7e9130": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": "Top area of the page",
+            "Bottom": "Bottom area of the page"
+          }
+        }
+      }
+    },
+    "helloWorld": {
+      "pageUrl": "https://bptcomco.sharepoint.com/sites/Prueba/SitePages/CollabHome.aspx",
+      "customActions": {
+        "fb489567-eab4-4b92-a42b-71aabd7e9130": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}
